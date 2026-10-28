@@ -54,8 +54,8 @@ Then pick **one** way:
 <summary><b>📱 A — From your phone (or PC): “Deploy to Cloudflare” button</b></summary>
 
 1. Open this link in your browser (log in to Cloudflare, it is free):
-   **`https://deploy.workers.cloudflare.com/?url=https://github.com/OWNER/REPO`**
-   *(replace `OWNER/REPO` with this repository)*
+   **`https://deploy.workers.cloudflare.com/?url=https://github.com/UnchartedAli/watchDog`**
+   *(replace `UnchartedAli/watchDog` with this repository)*
 2. It creates the Worker, a KV namespace and a D1 database from `wrangler.toml`, and asks for the secrets listed in `.dev.vars.example`.
 3. Go to [After deploying](#-after-deploying).
 
@@ -68,7 +68,7 @@ Jasaz is a third-party web installer for Cloudflare Workers (by [yebekhe](https:
 
 1. **Step 1** – enter your Cloudflare **Account ID** and an **API token**. Use the page's *auto-create token* link (Workers Scripts, D1 and KV edit). Delete the token when you are done.
 2. **Step 2** – worker name: anything (e.g. `ya-watchdog`). **Direct Raw URL:**
-   `https://raw.githubusercontent.com/OWNER/REPO/main/worker.js`
+   `https://raw.githubusercontent.com/UnchartedAli/watchDog/main/worker.js`
    Keep *Obfuscator* **off**. Leave *Clean rebuild* **off** when you are only updating (it would wipe bindings).
 3. **Step 3** – enable **D1** (binding name **`DB`**) and **KV** (binding name **`KV`**). Random names for the database/namespace are fine.
 4. **Step 4** – deploy. Then, in the Cloudflare dashboard → your Worker:
@@ -95,7 +95,7 @@ Jasaz is a third-party web installer for Cloudflare Workers (by [yebekhe](https:
 <summary><b>💻 D — PC with Wrangler (recommended for developers)</b></summary>
 
 ```bash
-git clone https://github.com/OWNER/REPO.git ya-watchdog && cd ya-watchdog
+git clone https://github.com/UnchartedAli/watchDog.git ya-watchdog && cd ya-watchdog
 npm install
 npx wrangler login
 

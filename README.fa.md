@@ -54,8 +54,8 @@
 <summary><b>📱 الف — با گوشی (یا PC): دکمه‌ی «Deploy to Cloudflare»</b></summary>
 
 1. این لینک رو توی مرورگر باز کن (وارد کلودفلر شو؛ رایگانه):
-   **`https://deploy.workers.cloudflare.com/?url=https://github.com/OWNER/REPO`**
-   *(به‌جای `OWNER/REPO` آدرس همین ریپو رو بذار)*
+   **`https://deploy.workers.cloudflare.com/?url=https://github.com/UnchartedAli/watchDog`**
+   *(به‌جای `UnchartedAli/watchDog` آدرس همین ریپو رو بذار)*
 2. ورکر، KV و D1 رو از روی `wrangler.toml` می‌سازه و مقدار سکرت‌های فایل `.dev.vars.example` رو ازت می‌پرسه.
 3. برو به [بعد از نصب](#-بعد-از-نصب).
 
@@ -68,7 +68,7 @@ Jasaz یک نصب‌کننده‌ی وب شخص‌ثالث برای ورکرها
 
 1. **گام ۱** — **Account ID** کلودفلر و یک **API Token** وارد کن. از لینک «ساخت خودکار توکن API» خود صفحه استفاده کن (دسترسی ویرایش Workers Scripts، D1 و KV). بعد از نصب توکن رو پاک کن.
 2. **گام ۲** — نام ورکر: هر چی (مثلاً `ya-watchdog`). **آدرس مستقیم سورس (Direct Raw URL):**
-   `https://raw.githubusercontent.com/OWNER/REPO/main/worker.js`
+   `https://raw.githubusercontent.com/UnchartedAli/watchDog/main/worker.js`
    گزینه‌ی *مبهم‌سازی* رو **خاموش** نگه دار. برای آپدیت، *Clean Rebuild* رو **خاموش** بذار (وگرنه بایندینگ‌ها پاک می‌شن).
 3. **گام ۳** — **D1** رو فعال کن (نام بایندینگ **`DB`**) و **KV** رو هم (نام بایندینگ **`KV`**). نام دیتابیس و namespace می‌تونه رندوم باشه.
 4. **گام ۴** — استقرار. بعد توی داشبورد کلودفلر ← ورکرت:
@@ -95,7 +95,7 @@ Jasaz یک نصب‌کننده‌ی وب شخص‌ثالث برای ورکرها
 <summary><b>💻 ت — روی PC با Wrangler (مناسب برنامه‌نویس‌ها)</b></summary>
 
 ```bash
-git clone https://github.com/OWNER/REPO.git ya-watchdog && cd ya-watchdog
+git clone https://github.com/UnchartedAli/watchDog.git ya-watchdog && cd ya-watchdog
 npm install
 npx wrangler login
 
