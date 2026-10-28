@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐕 YA Watchdog
+# 🐕‍🦺 YA Watchdog
 
 **A Telegram group guard + AI assistant that runs on a single Cloudflare Worker.**
 One file · no build step · free-tier friendly · Persian-first, 9 UI languages.
