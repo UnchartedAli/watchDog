@@ -1,0 +1,18 @@
+{
+  "name": "ya-watchdog",
+  "version": "1.0.0",
+  "description": "Telegram group guard + AI assistant on a single Cloudflare Worker",
+  "type": "module",
+  "main": "worker.js",
+  "license": "MIT",
+  "author": "UnchartedAli",
+  "scripts": {
+    "check": "node --check worker.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "keywords": ["telegram", "bot", "cloudflare-workers", "ai", "moderation", "persian"]
+}

@@ -1,0 +1,13 @@
+# Copy this file to .dev.vars for local development (`npx wrangler dev`). NEVER commit .dev.vars.
+# The "Deploy to Cloudflare" button also reads this file to ask you for the secrets.
+
+# From @BotFather
+BOT_TOKEN=
+# Any random string, 16+ characters (letters, digits, _ or -). Protects /webhook, /setup and the admin endpoints.
+WEBHOOK_SECRET=
+# Your numeric Telegram id (ask @userinfobot)
+OWNER_ID=
+# OpenAI-compatible API key. Default provider is OpenRouter (free keys: https://openrouter.ai/keys)
+AI_GATEWAY_API_KEY=
+# Recommended: encrypts API keys you store from the bot (/myai, /backup). Falls back to WEBHOOK_SECRET if empty.
+ENC_KEY=

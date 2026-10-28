@@ -1,0 +1,27 @@
+name = "ya-watchdog"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# reminders, captcha timeouts, price alerts, autopilot, YA module refreshes…
+[triggers]
+crons = ["* * * * *"]
+
+# Required. The ids are created for you on the first deploy (recent wrangler versions);
+# on an older wrangler run `npx wrangler kv namespace create KV` and paste the id here.
+[[kv_namespaces]]
+binding = "KV"
+
+# Recommended (history, referrals, translations, YA Dojo, …).
+[[d1_databases]]
+binding = "DB"
+database_name = "ya-watchdog-db"
+
+# Optional: the Filmyar movie bot uses a second, separate D1 database.
+# [[d1_databases]]
+# binding = "FILM_DB"
+# database_name = "ya-watchdog-film"
+
+[observability]
+enabled = true
+
+# Secrets are NOT stored here. Set them with:  npx wrangler secret put BOT_TOKEN   (see .dev.vars.example)
