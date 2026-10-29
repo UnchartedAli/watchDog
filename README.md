@@ -4,7 +4,7 @@
 
 **A Telegram group guard + AI assistant that runs on a single Cloudflare Worker.**
 One file · no build step · free-tier friendly · Persian-first, 9 UI languages.
-**Official channel: [@yamods](https://t.me/yamods)**
+**My channel: [@yamods](https://t.me/yamods)**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)
